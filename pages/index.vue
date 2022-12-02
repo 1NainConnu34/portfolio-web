@@ -50,6 +50,7 @@ h1 {
     font-size: 50px;
     font-weight: 700;
 }
+
 .image_1 {
     display: flex;
     margin-top: 100px;
