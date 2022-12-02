@@ -1,5 +1,4 @@
 <template>
-
     <body>
         <header class="banner" id="mainHeader" role="banner">
             <nav role="navigation">
