@@ -29,6 +29,12 @@ let data = await $fetch("/api/hello")
 
 <style scoped>
 
+.box{
+width: 100px;
+height: 100px;
+border: 1px solid black;
+}
+
 h1 {
     width: 200px;
     margin: auto;
