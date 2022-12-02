@@ -1,25 +1,25 @@
 <template>
-    <header class="banner" id="mainHeader" role="banner">
-        <nav role="navigation">
-            <div class="top-header">
-                <div class="navBurger">
-                    <div class="burger"></div>
+    <div>
+        <header class="banner" id="mainHeader" role="banner">
+            <nav role="navigation">
+                <div class="top-header">
+                    <div class="navBurger">
+                        <div class="burger"></div>
+                    </div>
                 </div>
-            </div>
-            <ul id="menu-vertical-menu" class="nav">
-                <li><a href="../">Home</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Mes Projets</h1>
-    <div class="projet">
-        <ul>
-            <li v-for="item in data">
-                <a :href="item.html_url">{{ item.name }}</a>
-            </li>
-        </ul>
+                <ul id="menu-vertical-menu" class="nav">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Mes Projets</h1>
+        <div class="box">
+            <a v-for="item in data" :href="item.html_url">
+                <div>{{ item.name }}</div>
+            </a>
+        </div>
     </div>
 </template>
 
@@ -28,12 +28,24 @@ let data = await $fetch("/api/hello")
 </script>
 
 <style scoped>
-
-.box{
-width: 100px;
-height: 100px;
-border: 1px solid black;
+.box {
+    margin-top: 30px;
+    margin-left: 600px;
+    display: grid;
+    width: 540px;
+    grid-template-columns: 120px 120px 120px;
+    align-items: start;
+    justify-content: space-between;
 }
+
+.box :first-child {
+    align-self: center;
+    border: 1px solid black;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
 
 h1 {
     width: 200px;
