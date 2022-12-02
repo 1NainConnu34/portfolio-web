@@ -17,16 +17,7 @@
                 </ul>
             </nav>
         </header>
-        <h1>
-            Alexandre bret
-        </h1>
     </body>
-    <h3 class="reveal-text">
-        Etudiant 1ère année
-    </h3>
-    <h3 class="reveal-text">
-        Epitech Montpellier
-    </h3>
 </template>
 
 
@@ -35,80 +26,6 @@
 <style scoped>
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 
-h3 {
-    margin-left: 235px;
-}
-
-.reveal-text,
-.reveal-text:after {
-    animation-delay: 2s;
-    animation-iteration-count: 1;
-    animation-duration: 800ms;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0, 0.1, 1, 0);
-}
-
-.reveal-text {
-    margin-top: 0px;
-    position: relative;
-    font-size: 40px;
-    user-select: none;
-    animation-name: reveal-text;
-    color: #000;
-    white-space: nowrap;
-    font-family: "Work Sans", sans-serif;
-}
-
-.reveal-text:after {
-    content: "";
-    position: absolute;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    pointer-events: none;
-    animation-name: revealer-text;
-}
-
-@keyframes reveal-text {
-    from {
-        clip-path: inset(0 100% 0 0);
-    }
-
-    to {
-        clip-path: inset(0 0 0 0);
-    }
-}
-
-@keyframes revealer-text {
-
-    0%,
-    50% {
-        transform-origin: 0 50%;
-    }
-
-    60%,
-    100% {
-        transform-origin: 100% 50%;
-    }
-
-    50% {
-        transform: scaleX(1);
-    }
-
-    60% {
-        transform: scaleX(1);
-    }
-
-    100% {
-        transform: scaleX(0);
-    }
-}
-
 body {
     padding: 0px;
     margin: 0;
@@ -116,16 +33,6 @@ body {
     background-size: 100%;
     position: relative;
     font-family: 'Montserrat', sans-serif;
-}
-
-body h1 {
-    color: white;
-    position: absolute;
-    right: 20px;
-    text-transform: uppercase;
-    text-align: right;
-    font-size: 50px;
-    font-weight: 700;
 }
 
 header#mainHeader {
