@@ -1,23 +1,21 @@
 <template>
-    <body>
-        <header class="banner" id="mainHeader" role="banner">
-            <nav role="navigation">
-                <div class="top-header">
-                    <div class="navBurger">
-                        <div class="burger"></div>
-                    </div>
+    <header class="banner" id="mainHeader" role="banner">
+        <nav role="navigation">
+            <div class="top-header">
+                <div class="navBurger">
+                    <div class="burger"></div>
                 </div>
-                <ul id="menu-vertical-menu" class="nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <h1>
-            Alexandre bret
-        </h1>
-    </body>
+            </div>
+            <ul id="menu-vertical-menu" class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>
+        Alexandre bret
+    </h1>
     <h3 class="reveal-text">
         Etudiant 1ère année
     </h3>
@@ -29,9 +27,9 @@
         <button class="custom-btn btn-5" onclick="window.location.href = 'projects'"><span>Découvrir</span></button>
     </div>
     <div>
-        <img class="image_1" src="~/assets/python.png" alt=""/>
+        <img class="image_1" src="~/assets/python.png" alt="" />
         <h4 class="text_1">1 an d'expérience</h4>
-        <img class="image_2" src="~/assets/c.png" alt=""/>
+        <img class="image_2" src="~/assets/c.png" alt="" />
         <h4 class="text_2">2 mois d'expérience</h4>
     </div>
 </template>
@@ -42,10 +40,20 @@
 <style scoped>
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 
+
+h1 {
+    color: black;
+    position: absolute;
+    right: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 50px;
+    font-weight: 700;
+}
 .image_1 {
     display: flex;
     margin-top: 100px;
-    margin-left: 250px;
+    margin-left: 400px;
     width: 150px;
     height: 150px;
 }
@@ -53,13 +61,13 @@
 .text_1 {
     display: flex;
     margin-top: 30px;
-    margin-left: 250px;
+    margin-left: 400px;
 }
 
 .image_2 {
     display: flex;
     margin-top: -200px;
-    margin-left: 1250px;
+    margin-left: 1400px;
     width: 150px;
     height: 150px;
 }
@@ -67,8 +75,9 @@
 .text_2 {
     display: flex;
     margin-top: 30px;
-    margin-left: 1250px;
+    margin-left: 1400px;
 }
+
 .frame {
     width: 90%;
     margin: 40px auto;
@@ -172,24 +181,6 @@ h3 {
     color: #000;
     white-space: nowrap;
     font-family: "Work Sans", sans-serif;
-}
-
-body {
-    padding: 0px;
-    margin: 0;
-    background-color: #CEDADA;
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-}
-
-body h1 {
-    color: black;
-    position: absolute;
-    right: 20px;
-    text-transform: uppercase;
-    text-align: right;
-    font-size: 50px;
-    font-weight: 700;
 }
 
 header#mainHeader {
@@ -425,6 +416,4 @@ header#mainHeader nav:hover li:nth-child(8) a {
     -webkit-transition-delay: 0.58s;
     transition-delay: 0.58s;
 }
-
-
 </style>
